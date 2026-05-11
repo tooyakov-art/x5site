@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Privacy Policy — X5 Creators</title>
+<title>Privacy Policy - X5</title>
 <style>
   :root { color-scheme: dark; }
   body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0A0A12; color: #fff; line-height: 1.65; }
   .wrap { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
-  h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 4px; }
+  h1 { font-size: 32px; font-weight: 700; margin-bottom: 4px; }
   .updated { color: rgba(255,255,255,.5); font-size: 13px; margin-bottom: 40px; }
   h2 { font-size: 18px; font-weight: 600; margin: 32px 0 8px; }
   p, li { color: rgba(255,255,255,.78); font-size: 15px; }
@@ -20,64 +20,60 @@
 </head>
 <body>
   <div class="wrap">
-    <a class="back" href="/">← X5</a>
+    <a class="back" href="/">X5</a>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: May 8, 2026</p>
-    <h2>What X5 Creators is</h2>
-    <p>X5 Creators is a marketplace and messaging app for creators, marketers and clients. Users sign up to post tasks, send proposals, exchange messages, and showcase their portfolio. This policy describes what data we collect, why, and how to control it.</p>
+    <p class="updated">Last updated: May 12, 2026</p>
+
     <h2>What we collect</h2>
+    <p>X5 uses Supabase to provide authentication, profiles, marketplace tasks, chats, portfolios and courses. Depending on what you choose to use, we may store:</p>
     <ul>
-      <li><strong>Account</strong> — your email address and (if you provide one during Sign in with Apple) your name. Authentication is handled by Apple, Google, or email/password through Supabase Auth.</li>
-      <li><strong>User ID</strong> — an internal identifier used to associate you with your account, profile and content.</li>
-      <li><strong>Profile</strong> — what you choose to share: display name, nickname, bio, avatar, social links, language, specialist categories, and whether your profile is publicly visible in the Hub.</li>
-      <li><strong>Messages</strong> — text, photos and voice messages you send in 1-to-1 chats. Stored to deliver messages to the recipient and to allow you to read your own history across devices. Linked to your User ID.</li>
-      <li><strong>Tasks &amp; portfolio</strong> — task posts, proposals, portfolio items (image URLs, captions) you create.</li>
-      <li><strong>Subscription receipt</strong> — when you subscribe to X5 Pro, Apple sends us the StoreKit transaction so we can grant Pro features. We never see your payment card.</li>
-      <li><strong>Push token</strong> — only if you grant notification permission, so we can deliver push alerts about new messages and accepted task responses.</li>
-      <li><strong>Crash and error logs</strong> — anonymised stack traces written to our database to help us fix bugs.</li>
+      <li>Email address, name and user ID from Sign in with Apple, Google sign-in or email sign-in.</li>
+      <li>Profile information, portfolio entries, proposals, chat messages, reports and block status.</li>
+      <li>Photos or voice messages only when you choose to attach or record them in chats or portfolio.</li>
+      <li>Purchase entitlement status for X5 Pro, provided by Apple.</li>
     </ul>
-    <h2>What we do NOT collect</h2>
+
+    <h2>What we do not collect</h2>
     <ul>
-      <li>No tracking identifiers (IDFA, IDFV) — App Tracking Transparency is not used.</li>
-      <li>No location data.</li>
-      <li>No contacts, no calendar, no health data.</li>
-      <li>No analytics SDKs, no advertising SDKs, no third-party trackers.</li>
+      <li>No tracking identifiers and no App Tracking Transparency tracking.</li>
+      <li>No location, contacts, health data or advertising profiles.</li>
+      <li>No biometric or face data.</li>
+      <li>No third-party advertising SDKs.</li>
     </ul>
+
     <h2>Why we ask for permissions</h2>
     <ul>
-      <li><strong>Photo Library</strong> — only when you attach a photo to a chat or upload a portfolio item. Photos you do not pick are never read.</li>
-      <li><strong>Microphone</strong> — only when you record a voice message in a chat. Audio is sent only to the recipient of that chat.</li>
-      <li><strong>Face ID</strong> — optional. If you enable App Lock in Settings, Face ID is used locally on your device to unlock the app. We never receive your biometric data.</li>
-      <li><strong>Notifications</strong> — optional. Used to deliver push alerts about new messages and task replies.</li>
+      <li>Face ID is used only for optional App Lock through Apple's LocalAuthentication framework. X5 receives only a success or failure result.</li>
+      <li>Photos access is used only when you attach an image to a chat or portfolio item.</li>
+      <li>Microphone access is used only when you record a voice message in chat.</li>
+      <li>Notifications are used for message and proposal alerts after you sign in.</li>
     </ul>
-    <h2>How we use your data</h2>
-    <p>To run the marketplace: deliver messages, show profiles in the Hub, accept proposals, grant subscription benefits, send notifications you opted into. We do not sell, rent or share your personal information with third parties.</p>
-    <h2>Service providers</h2>
+
+    <h2>How we use data</h2>
+    <p>We use data to operate the app: authenticate accounts, display profiles and portfolios, send messages, process reports, provide courses, restore purchases and keep users safe.</p>
+
+    <h2>Sharing</h2>
+    <p>We do not sell or rent personal information. Service providers process data only to run the app:</p>
     <ul>
-      <li><strong>Apple</strong> — Sign in with Apple, App Store In-App Purchases, push notifications (APNs).</li>
-      <li><strong>Google</strong> — Sign in with Google (only if you choose this method).</li>
-      <li><strong>Supabase</strong> (PostgreSQL on AWS) — stores your account, profile, messages, tasks and portfolio under Row Level Security policies.</li>
+      <li>Apple for Sign in with Apple, StoreKit purchases and optional Face ID authentication.</li>
+      <li>Google for Google sign-in if you choose it.</li>
+      <li>Supabase for authentication, database and storage.</li>
     </ul>
-    <h2>Subscriptions</h2>
-    <p>X5 Pro is an auto-renewing monthly subscription priced at $9.99/month (or local-currency equivalent). It auto-renews unless you cancel at least 24 hours before the period ends. You can manage and cancel your subscription in iOS Settings → your Apple ID → Subscriptions. Apple's Standard EULA (<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>) applies.</p>
-    <h2>User-generated content &amp; safety</h2>
-    <p>X5 Creators contains user-generated content (profiles, messages, tasks, portfolio items). To keep the community safe:</p>
-    <ul>
-      <li>You can <strong>Report</strong> any user or task from inside the app — it opens an email to <a href="mailto:appreview@x5studio.app">appreview@x5studio.app</a> with the offending ID.</li>
-      <li>You can <strong>Block</strong> a user; their content is hidden from your view immediately.</li>
-      <li>Reports are reviewed within 24 hours and offending content is removed.</li>
-    </ul>
+
+    <h2>Safety and moderation</h2>
+    <p>Users can block or report accounts from chats, profiles and marketplace flows. Reports are sent to our moderation team and reviewed within 24 hours.</p>
+
     <h2>Account deletion</h2>
-    <p>You can delete your account and all associated data at any time, directly from the app:</p>
+    <p>You can delete your account and associated app data at any time:</p>
     <ul>
-      <li>Open X5 → Profile → Settings → <strong>Danger zone</strong> → <strong>Delete account</strong> → confirm.</li>
+      <li>Open X5, go to Profile, tap Settings, then Delete Account and confirm.</li>
       <li>Or email <a href="mailto:support@x5studio.app">support@x5studio.app</a> and we will remove your account within 7 days.</li>
     </ul>
-    <p>Deletion removes your auth record, profile, portfolio, tasks, and messages. The action is permanent and cannot be reversed.</p>
+    <p>Deletion is permanent and cannot be reversed.</p>
+
     <h2>Children</h2>
-    <p>X5 Creators is rated 12+ on the App Store and is not directed at children under 13. We do not knowingly collect personal data from children under 13.</p>
-    <h2>Changes to this policy</h2>
-    <p>If we materially change this policy, we will update the "Last updated" date above and, where appropriate, notify users in the app.</p>
+    <p>X5 is rated 4+ and does not knowingly collect data from children under 13.</p>
+
     <h2>Contact</h2>
     <p>Questions? Email <a href="mailto:support@x5studio.app">support@x5studio.app</a>.</p>
   </div>
